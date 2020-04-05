@@ -30,9 +30,17 @@ remove app `pm2 delete app`
 
 1. Sent mails are seen as below:
 
+![Send Mail Test](https://raw.githubusercontent.com/vishwarajanand/NodeJsMailSendNReceive/master/demos/send_mail_demo.png "Send Mail Test")
 
 2. Received mails are notified in mail object, printed to console as below:
 
+![Receive Mail Test](https://raw.githubusercontent.com/vishwarajanand/NodeJsMailSendNReceive/master/demos/receive_mail_demo.png "Receive Mail Test")
 
 # Demo Video
 
+ToDo: Will upload later
+
+# Credits
+
+1. https://github.com/ghansh22/email_using_nodejs/blob/master/mailer.js
+2. https://github.com/jcreigno/nodejs-mail-notifier/blob/master/sample/toggled-mail-notifier.js

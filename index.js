@@ -20,11 +20,11 @@ if (cluster.isMaster) {
         cluster.fork()
     })
 
-    // receive mails on master
+    // receive mails on master by mail-notifier
     const notifier = require('mail-notifier');
     const imap = {
-        user: configs.smpt_server.username,
-        password: configs.smpt_server.password,
+        user: configs.email_server.username,
+        password: configs.email_server.password,
         host: "imap.gmail.com",
         port: 993, // imap port
         tls: true,// use secure connection
@@ -46,7 +46,7 @@ if (cluster.isMaster) {
     notification.start();
 
 } else {
-    // send mails by workers
+    // send mails on workers by nodemailer
     console.log(`started a worker at ${process.pid}`)
     http.createServer((req, res) => {
         console.log(`serving form ${process.pid}`)
@@ -60,14 +60,14 @@ if (cluster.isMaster) {
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                    user: configs.smpt_server.username,
-                    pass: configs.smpt_server.password
+                    user: configs.email_server.username,
+                    pass: configs.email_server.password
                 }
             });
             // email options
             let mailOptions = {
-                from: configs.smpt_server.username,
-                to: configs.smpt_server.forward_alias || configs.smpt_server.username,
+                from: configs.email_server.username,
+                to: configs.email_server.forward_alias || configs.email_server.username,
                 subject: 'Test email from Node JS App',
                 text: 'Hello pinged from Node Js. Yoo Hoo!'
             };// send email

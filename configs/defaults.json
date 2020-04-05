@@ -1,10 +1,7 @@
 {
-    "admin_portal": {
-        "username": "admin",
-        "password": "admin"
-    },
-    "smpt_server": {
-        "username": "username",
-        "password": "password"
+    "email_server": {
+        "username": "to be set before start, required",
+        "password": "to be set before start, required",
+        "forward_alias": "to be set before start, optional"
     }
 }

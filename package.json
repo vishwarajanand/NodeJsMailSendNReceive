@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "NodeJS based mail sender adn receiver",
   "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishwarajanand/NodeJsMailSendNReceive.git"
+  },
   "scripts": {
     "build": "node index.js",
     "start": "clear && node index 3001",
