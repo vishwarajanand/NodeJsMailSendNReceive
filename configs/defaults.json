@@ -1,0 +1,10 @@
+{
+    "admin_portal": {
+        "username": "admin",
+        "password": "admin"
+    },
+    "smpt_server": {
+        "username": "username",
+        "password": "password"
+    }
+}
