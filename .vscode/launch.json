@@ -6,6 +6,9 @@
     "configurations": [
         {
             "type": "node",
+            "env": {
+                "NODE_ENV": "production"
+            },
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": [

@@ -20,13 +20,14 @@
   "author": "VishwarajAnand",
   "license": "GPL-3.0",
   "dependencies": {
-    "pm2": "4.2.3",
-    "loadtest": "5.0.1",
     "cluster": "0.7.7",
     "http": "0.0.1-security",
-    "os": "0.1.1",
+    "loadtest": "5.0.1",
+    "mail-notifier": "0.5.0",
+    "mailparser": "^2.7.7",
     "node-localStorage": "0.0.1",
     "nodemailer": "6.4.6",
-    "mail-notifier": "0.5.0"
+    "os": "0.1.1",
+    "pm2": "4.2.3"
   }
 }

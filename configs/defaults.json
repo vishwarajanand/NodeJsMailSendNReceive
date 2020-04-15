@@ -1,7 +1,11 @@
 {
     "email_server": {
-        "username": "to be set before start, required",
-        "password": "to be set before start, required",
+        "gmail_username": "to be set before start, required",
+        "gmail_password": "to be set before start, required",
         "forward_alias": "to be set before start, optional"
+    },
+    "email_parser_settings": {
+        "subject_prefix": "[BotMailer]",
+        "thread_seperator": "________________________________"
     }
 }
