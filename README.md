@@ -1,8 +1,10 @@
-# Send and Recieve mail via Node Js
-This repository demo'es a nodeJS app to send mails using [SMTP protocol](https://www.npmjs.com/package/nodemailer) and receive them using [IMAP protocol](https://www.npmjs.com/package/mail-notifier).
+# Send and Receive mail via Node Js
+This repository demo's a nodeJS app to send mails using [SMTP protocol](https://www.npmjs.com/package/nodemailer) and receive them using [IMAP protocol](https://www.npmjs.com/package/mail-notifier).
+
+Run this code or feel free to modify according to your needs.
 
 # Configs
-Following configurations are required for bootstarting:
+Following configurations are required for boot starting:
 
 1. `gmail_username` and `gmail_password` which would be used for forwarding emails.
 2. `forward_alias` where emails can be forwarded.
@@ -19,7 +21,7 @@ Following configurations are required for bootstarting:
 
 1. Load testing:
 Start server `node index.js`
-Run Loadtests `loadtest -n 2000 http://localhost:3000`
+Run Load tests `loadtest -n 2000 http://localhost:3000`
 Traffic should be served from several workers
 
 2. Cluster Management using pm2:
@@ -38,7 +40,7 @@ remove app `pm2 delete app`
 
 ![Send Mail Test](https://raw.githubusercontent.com/vishwarajanand/NodeJsMailSendNReceive/master/demos/send_mail_demo.png "Send Mail Test")
 
-2. Received mails are notified in mail object, printed to console as below:
+2. Received emails are notified in mail object, printed to console as below:
 
 ![Receive Mail Test](https://raw.githubusercontent.com/vishwarajanand/NodeJsMailSendNReceive/master/demos/receive_mail_demo.png "Receive Mail Test")
 
