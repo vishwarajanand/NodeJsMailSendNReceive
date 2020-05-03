@@ -13,7 +13,7 @@ Following configurations are required for boot starting:
 
 
 # Run
-1. Run `npm install && node index.js`
+1. Run `npm install && node index.js <custom_port_no>`
 2. Go to `http://localhost:3000/send_mail` to send a test mail.
 3. Send a mail to username in `configs/defaults.json` to get a notification for the receiving mail.
 
