@@ -1,13 +1,19 @@
 # Send and Recieve mail via Node Js
-This repository demo'es a nodeJS app to send mails using SMPT protocol and receive using IMAP protocol.
+This repository demo'es a nodeJS app to send mails using [SMTP protocol](https://www.npmjs.com/package/nodemailer) and receive them using [IMAP protocol](https://www.npmjs.com/package/mail-notifier).
+
+# Configs
+Following configurations are required for bootstarting:
+
+1. `gmail_username` and `gmail_password` which would be used for forwarding emails.
+2. `forward_alias` where emails can be forwarded.
+3. Enable `Less Secure Apps` so that Google does not block sign-in attempt by checking the toggle [here](https://myaccount.google.com/lesssecureapps?pli=1). 
+4. Enable IMAP in your Gmail account settings as described [here](https://support.google.com/mail/answer/7126229?hl=en)
+
 
 # Run
-1. Add SMTP server username and passwords in `configs/defaults.json`
-2. Authorize "less secure apps" for Gmail as described [here](https://support.google.com/accounts/answer/6010255?hl=en)
-3. Enable IMAP in your Gmail account settings as described [here](https://support.google.com/mail/answer/7126229?hl=en)
-4. Run `npm install && node index.js`
-5. Go to `http://localhost:3000/send_mail` to send a test mail.
-6. Send a mail to username in `configs/defaults.json` to get a notification for the receiving mail.
+1. Run `npm install && node index.js`
+2. Go to `http://localhost:3000/send_mail` to send a test mail.
+3. Send a mail to username in `configs/defaults.json` to get a notification for the receiving mail.
 
 # Tests
 
